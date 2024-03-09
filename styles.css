@@ -25,8 +25,25 @@
     height: 35px;
     width: 35px;
     transition: 1,5s;
+}  
+
+.inicial {
+    display: flex;
+    position: relative;
+    left: 20px;
+    top: 300px;
 }
 
 .imagem {
-    
+    position: relative;
+    top: 1000px;
+}
+
+.calvo {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 300px;
+    left: 600px;
 }
