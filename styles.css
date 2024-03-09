@@ -95,3 +95,8 @@
     height: 450px;
     left: 50px;
 }
+
+/* Estilos para telas menores que 600px de largura */
+@media only screen and (max-width: 600px) {
+    /* Seus estilos para dispositivos móveis aqui */
+}
