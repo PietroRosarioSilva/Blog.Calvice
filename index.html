@@ -18,6 +18,26 @@
             bottom: 0;
             width: 100%;
         }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundo_branco.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black; /* Cor padrão do texto */
+            transition: background-image 0.5s; /* Transição suave ao alterar a imagem de fundo */
+        }
+
+        /* Estilos do botão */
+        .btn {
+            background-color: #333; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -56,7 +76,6 @@
 <body>
 
 
-
     <div class="top">
 
         <h1>
@@ -78,6 +97,8 @@
         <div class="imagem">
             <img src="calvo um.jpg" alt="calvo triste">
         </div>
+
+        <button class="btn" onclick="changeBackground()">Alterar Imagem de Fundo</button>
 
     <p class="inicial">
         A calvície é um problema capilar que afeta muitas pessoas em todo o mundo. É caracterizada pela perda de cabelo em determinadas áreas do couro cabeludo, 
@@ -146,6 +167,21 @@ Em suma, o eflúvio telógeno é uma condição capilar caracterizada pela queda
 <footer>
     <p>&copy; 2024 Pietro</p>
 </footer>
+
+<script>
+    function changeBackground() {
+        var body = document.body;
+        var currentImage = body.style.backgroundImage;
+
+        if (currentImage.includes('fundo_branco.jpg')) {
+            body.style.backgroundImage = 'url("fundo_preto.jpg")';
+            body.style.color = 'white'; // Altera a cor do texto para branco
+        } else {
+            body.style.backgroundImage = 'url("fundo_branco.jpg")';
+            body.style.color = 'black'; // Altera a cor do texto para preto
+        }
+    }
+</script>
 
 </body>
 

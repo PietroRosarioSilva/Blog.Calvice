@@ -114,3 +114,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo_branco.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black; /* Cor padrão do texto */
+    transition: background-image 0.5s; /* Transição suave ao alterar a imagem de fundo */
+}
+
