@@ -126,3 +126,23 @@ body {
     transition: background-image 0.5s; /* Transição suave ao alterar a imagem de fundo */
 }
 
+/* Estilos para telas menores que 600px de largura */
+@media only screen and (max-width: 600px) {
+    .top {
+        height: auto; /* Altura automática para a barra superior */
+    }
+
+    .icons {
+        position: static; /* Volta a posição ao padrão */
+        flex-direction: column; /* Altera a direção dos ícones para vertical */
+        align-items: center; /* Centraliza os ícones verticalmente */
+    }
+
+    /* Adicione mais estilos conforme necessário para ajustar o layout em dispositivos móveis */
+}
+
+.btn {
+    position: relative;
+    top: 150px;
+    left: 765px;
+}

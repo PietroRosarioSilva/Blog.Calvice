@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog.Calvice</title>
     <link rel="stylesheet" href="styles.css">
@@ -30,14 +31,16 @@
             transition: background-image 0.5s; /* Transição suave ao alterar a imagem de fundo */
         }
 
-        /* Estilos do botão */
         .btn {
-            background-color: #333; /* Cor do botão */
-            color: white; /* Cor do texto do botão */
+            background-color: #333;
+            color: white;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
+            border-radius: 5px;
         }
+        
+
     </style>
 
 
@@ -168,20 +171,25 @@ Em suma, o eflúvio telógeno é uma condição capilar caracterizada pela queda
     <p>&copy; 2024 Pietro</p>
 </footer>
 
-<script>
-    function changeBackground() {
-        var body = document.body;
-        var currentImage = body.style.backgroundImage;
+    <!-- Botão para alterar a imagem de fundo -->
+    
 
-        if (currentImage.includes('fundo_branco.jpg')) {
-            body.style.backgroundImage = 'url("fundo_preto.jpg")';
-            body.style.color = 'white'; // Altera a cor do texto para branco
-        } else {
-            body.style.backgroundImage = 'url("fundo_branco.jpg")';
-            body.style.color = 'black'; // Altera a cor do texto para preto
+    <!-- Seu conteúdo do site aqui -->
+
+    <script>
+        function changeBackground() {
+            var body = document.body;
+            var currentImage = body.style.backgroundImage;
+
+            if (currentImage.includes('fundo_branco.jpg')) {
+                body.style.backgroundImage = "url('fundo_preto.jpg')";
+                body.style.color = 'white'; // Altera a cor do texto para branco
+            } else {
+                body.style.backgroundImage = "url('fundo_branco.jpg')";
+                body.style.color = 'black'; // Altera a cor do texto para preto
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
 
