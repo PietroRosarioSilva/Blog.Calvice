@@ -1,120 +1,4 @@
-.top {
-    background-color: red;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icons {
-    display: flex;
-    position: absolute;
-    right: 20px; /* Ajuste conforme necessário */
-    top: 20px; /* Ajuste conforme necessário */
-    height: 105px;
-    width: 105px;
-    gap: 7px;
-    color: white;
-}
-
-.icons ion-icon:hover {
-    background-color: rgba(128, 128, 128, 0.281); /* Cor de fundo semi-transparente para escurecer */
-    border-radius: 100%; /* Torna o elemento um círculo */
-    height: 35px;
-    width: 35px;
-    transition: 1,5s;
-}  
-
-.inicial {
-    display: flex;
-    position: relative;
-    left: 20px;
-    top: 300px;
-}
-
-.imagem {
-    position: relative;
-    top: 1000px;
-    left: 50px;
-}
-
-.calvo {
-    display: flex;
-    position: absolute;
-    width: 562px;
-    height: 350px;
-    top: 300px;
-    left: 600px;
-}
-
-.alopecia {
-    position: relative;
-    display: flex;
-    width: 600px;
-    height: 600px;
-    top: 430px;
-    left: 600px;
-}
-
-.telogeno {
-    position: relative;
-    display: flex;
-    top: 500px;
-    width: 600px;
-    height: 450px;
-    left: 50px;
-}
-
-.efluvio {
-    position: relative;
-    display: flex;
-    width: 600px;
-    height: 600px;
-    top: 50px;
-    left: 750px;
-}
-
-.andro {
-    position: relative;
-    display: flex;
-    width: 600px;
-    height: 600px;
-    top: 50px;
-    left: 750px;
-}
-
-.acabou{
-    position: relative;
-    display: flex;
-    top: -550px;
-    width: 600px;
-    height: 450px;
-    left: 50px;
-}
-
-/* Estilos para telas menores que 600px de largura */
-@media only screen and (max-width: 600px) {
-    /* Seus estilos para dispositivos móveis aqui */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.icons ion-icon {
-    color: white;
-}
-
-body {
-    background-image: url('fundo branco.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+/* Estilos comuns */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -122,27 +6,32 @@ body {
     background-image: url('fundo_branco.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: black; /* Cor padrão do texto */
-    transition: background-image 0.5s; /* Transição suave ao alterar a imagem de fundo */
+    color: black;
+    transition: background-image 0.5s;
 }
 
-/* Estilos para telas menores que 600px de largura */
-@media only screen and (max-width: 600px) {
-    .top {
-        height: auto; /* Altura automática para a barra superior */
-    }
-
-    .icons {
-        position: static; /* Volta a posição ao padrão */
-        flex-direction: column; /* Altera a direção dos ícones para vertical */
-        align-items: center; /* Centraliza os ícones verticalmente */
-    }
-
-    /* Adicione mais estilos conforme necessário para ajustar o layout em dispositivos móveis */
+.top {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.btn location {
-    position: relative;
-    top: 150px;
-    left: 765px;
+.icons ion-icon {
+    color: white;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
