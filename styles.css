@@ -70,3 +70,17 @@ body {
     gap: 50px;
     top: 500px;
 }
+
+.bruga {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 700px;
+    top: 800px;
+    right: 700px;
+}
+
+.bruga img {
+    height: 600px;
+    width: 600px;
+}
