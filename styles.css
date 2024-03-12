@@ -3,9 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fundo_branco.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto; /* Alterado para permitir a repetição da imagem de fundo */
+    background-repeat: repeat; /* Adicionado para garantir a repetição da imagem de fundo */
     color: black;
     transition: background-image 0.5s;
 }
@@ -31,22 +30,10 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    position: fixed;
+    position: fixed; /* Definir a posição como fixa */
     bottom: 20px;
     right: 20px;
-}
-
-.primeiro{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 300px;
-    right: 300px;
-}
-
-.primeiro img {
-    height: 300px;
+    z-index: 9999; /* Definir um valor de z-index alto */
 }
 
 .inicio {
@@ -54,33 +41,19 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 825px;
-    width: 500px;
-}
-
-.inicio p {
-    height: 50px;
+    width: 100%;
 }
 
 .calvos {
     position: relative;
     display: flex;
     flex-direction: column;
-    right: 700px;
     gap: 50px;
     top: 500px;
 }
 
-.bruga {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    gap: 700px;
-    top: 800px;
-    right: 700px;
+.calvos img {
+height: 600px;
+width: 700px;
 }
 
-.bruga img {
-    height: 600px;
-    width: 600px;
-}
