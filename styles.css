@@ -46,14 +46,27 @@ body {
 }
 
 .primeiro img {
-    width: 300px;
     height: 300px;
 }
 
 .inicio {
+    position: relative;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 800px;
-    
+    left: 825px;
+    width: 500px;
+}
+
+.inicio p {
+    height: 50px;
+}
+
+.calvos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 700px;
+    gap: 50px;
+    top: 500px;
 }
