@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-size: auto; /* Alterado para permitir a repetição da imagem de fundo */
-    background-repeat: repeat; /* Adicionado para garantir a repetição da imagem de fundo */
+    background-size: auto;
+    background-repeat: repeat;
     color: black;
     transition: background-image 0.5s;
 }
@@ -30,10 +30,10 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    position: fixed; /* Definir a posição como fixa */
+    position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999; /* Definir um valor de z-index alto */
+    z-index: 9999;
 }
 
 .inicio {
@@ -48,11 +48,33 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
     top: 500px;
 }
 
 .calvos img {
-height: 600px;
-width: 700px;
+    height: 600px;
+    width: 700px;
+}
+
+.neymar {
+    display: flex;
+    position: relative;
+    width: 500px;
+    left: 800px;
+    top: -1300px;
+}
+
+/* Estilos para dispositivos com largura de tela menor que 600px (celulares, por exemplo) */
+@media only screen and (max-width: 600px) {
+    .calvos img {
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 100%; /* Define a largura para ocupar toda a largura do contêiner pai */
+    }
+
+    .neymar {
+        width: 100%; /* Define a largura para ocupar toda a largura do contêiner pai */
+        left: 0; /* Alinha à esquerda */
+        top: 0; /* Alinha ao topo */
+    }
 }
