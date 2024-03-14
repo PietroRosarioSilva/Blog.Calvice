@@ -67,6 +67,7 @@ body {
     font-size: large;
 }
 
+
 .tipo {
     display: flex;
     position: relative;
@@ -75,3 +76,98 @@ body {
     top: -1100px;
     font-size: large;
 }
+
+.sla {
+    display: flex;
+    position: relative;
+    width: 500px;
+    left: 800px;
+    top: -900px;
+    font-size: large;
+}
+
+.bruga img {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 700px;
+    top: -600px;
+}
+
+.ok img {
+    display: flex;
+    position: relative;
+    left: 1362px;
+    width: 500px;
+    height: 700px;
+    top: -1300px;
+}
+
+.texto {
+    position: absolute; /* Define a posição absoluta */
+    left: 42%; /* Alinha a esquerda do elemento ao centro horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 400px;
+    top: 4075px;
+}
+
+.isso {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -800px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #chat-window {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  #message-input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  #send-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
