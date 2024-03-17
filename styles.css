@@ -37,14 +37,6 @@ body {
     z-index: 9999;
 }
 
-.inicio {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-}
-
 .calvos {
     position: relative;
     display: flex;
@@ -111,7 +103,7 @@ body {
     align-items: center;
     height: 150px;
     width: 400px;
-    top: 4075px;
+    top: 4400px;
 }
 
 .isso {
@@ -170,4 +162,3 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  
